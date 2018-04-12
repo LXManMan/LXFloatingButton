@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LXCustomViewController">
+            <connections>
+                <outlet property="container" destination="Zwq-dO-4Mi" id="jRS-eN-HDu"/>
+                <outlet property="floatintButton" destination="gyE-jc-e5Q" id="SMx-re-yVI"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zwq-dO-4Mi">
+                    <rect key="frame" x="37.5" y="183.5" width="300" height="300"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gyE-jc-e5Q" customClass="LXFloaintButton">
+                            <rect key="frame" x="99.5" y="99.5" width="100" height="100"/>
+                            <color key="backgroundColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="100" id="YNT-md-nmv"/>
+                                <constraint firstAttribute="height" constant="100" id="oEv-fo-keq"/>
+                            </constraints>
+                            <state key="normal" title="拖动"/>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.49076450892857143" green="0.51844308035714282" blue="0.94723772321428568" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="gyE-jc-e5Q" firstAttribute="centerY" secondItem="Zwq-dO-4Mi" secondAttribute="centerY" id="CW2-tP-Sw3"/>
+                        <constraint firstItem="gyE-jc-e5Q" firstAttribute="centerX" secondItem="Zwq-dO-4Mi" secondAttribute="centerX" id="JVK-jM-FwB"/>
+                        <constraint firstAttribute="height" constant="300" id="ogg-ea-Ufd"/>
+                        <constraint firstAttribute="width" constant="300" id="xCQ-4B-pqs"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Zwq-dO-4Mi" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="QYm-M9-e6g"/>
+                <constraint firstItem="Zwq-dO-4Mi" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="Th4-e1-GcA"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+        </view>
+    </objects>
+</document>

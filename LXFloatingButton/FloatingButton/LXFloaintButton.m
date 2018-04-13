@@ -54,10 +54,10 @@
     //下边界的限制
     newCenter.y = MIN(self.parentView.height - self.safeInsets.bottom- recognizer.view.frame.size.height/2, newCenter.y);
     
-    //右边界的限制
+    //左边界的限制
     newCenter.x = MAX(recognizer.view.frame.size.width/2, newCenter.x);
     
-     //左边界的限制
+     //右边界的限制
     newCenter.x = MIN(self.parentView.width - recognizer.view.frame.size.width/2,newCenter.x);
     
     //设置中心点范围
